@@ -28,6 +28,8 @@
           colors: {
             clifford: '#da373d',
             'primary-color': '#F85559',
+            'light-gray-text': '#121212CC',
+            'black-text': '#121212CC',
           }
         }
       }
@@ -36,13 +38,13 @@
 </head>
 <body>
     <!-- the header -->
-    <header>
+    <header class="  my-10  lg:mx-32">
         <!-- navbar -->
-        <nav class="container  my-10  mx-auto">
-            <div class="navbar md:bg-primary-color p-9 rounded-full flex flex-col md:flex-row gap-4">
-                <div class="navbar-start ">
+        <nav >
+            <div class="navbar md:bg-primary-color p-9 rounded-full flex flex-col md:flex-row  gap-4">
+                <div class="navbar-start text-white ">
                    
-                  <div class="dropdown">
+                  <div class="dropdown text-white">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
@@ -56,7 +58,7 @@
                   </div>
                   <a class="btn btn-ghost normal-case text-xl lg:text-4xl font-bold"><img src="images/logo.png" alt=""> Fruit Burst</a>
                 </div>
-                <div class="navbar-center hidden  lg:flex ">
+                <div class="navbar-center hidden  lg:flex text-white">
                   <ul class="menu menu-horizontal px-1 ">
                     <li><a>Home</a></li>
                     <li><a>About us</a></li>
@@ -72,12 +74,40 @@
                 </div>
               </div>
         </nav>
+        <!-- banner -->
+        <div>
+
+        </div>
     </header>
 
     <!-- main -->
-    <main>
-
-    </main>
+    <main class="container mx-auto "> 
+        <!-- fruits section -->
+        <section class="my-24 lg:mx-32 bg-slate-50 shadow-lg rounded-lg hidden lg:flex">
+            <div class="flex  justify-center gap-24 items-center p-4 lg:p-12">
+                <div class="space-y-4 text-center ">
+                    <img src="images/fruit1.png " class="w-full" alt="">
+                    <p class="text-light-gray-text font-bold text-xl">Grapes</p>
+                </div>
+                <div class="space-y-2 ">
+                    <img src="images/fruit2.png" class="w-full" alt="">
+                    <p class="text-light-gray-text font-bold text-xl">Orange</p>
+                </div>
+                <div class="space-y-4 ">
+                    <img src="images/fruit3.png" class="w-full" alt="">
+                    <p class="text-light-gray-text font-bold text-xl">Mango</p>
+                </div>
+                <div class="space-y-4 ">
+                    <img src="images/fruit4.png" class="w-28" alt="">
+                    <p class="text-light-gray-text font-bold text-xl">Strawberry</p>
+                </div>
+                <div class="space-y-4 ">
+                    <img src="images/fruit5.png" class="w-28" alt="">
+                    <p class="text-light-gray-text font-bold text-xl">Pomegranate</p>
+                </div>
+            </div>
+        </section>
+   </main>
 
     <!-- footer -->
     <Footer>
