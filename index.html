@@ -42,9 +42,9 @@
         <!-- navbar -->
         <nav >
             <div class="navbar md:bg-primary-color p-9 rounded-full flex flex-col md:flex-row  gap-4">
-                <div class="navbar-start text-white ">
+                <div class="navbar-start lg:text-white ">
                    
-                  <div class="dropdown text-white">
+                  <div class="dropdown lg:text-white">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
@@ -231,7 +231,29 @@
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
             </div>
             <div class="card-actions">
-              <button class="btn bg-primary-color text-white capitalize">Details</button>
+                   <!-- Open the modal using ID.showModal() method -->
+<button class="btn btn bg-primary-color text-white capitalize"  onclick="my_modal_5.showModal()">Details</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box text-center">
+   <img src="images/fruit6.png" class="w-64 mx-auto" alt="">
+    <h3 class="text-2xl lg:text-4xl font-extrabold">Apple</h3>
+    <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+    <div class="rating">
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      <input type="radio" name="rating-2"  class="mask mask-star-2 bg-orange-400" checked />
+      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn mr-10">Close</button>
+        <button class="btn btn bg-primary-color text-white">Buy Now</button>
+      </form>
+    </div>
+  </div>
+</dialog>
             </div>
           </div>
         </div>
@@ -251,7 +273,7 @@
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
             </div>
             <div class="card-actions">
-              <button class="btn bg-primary-color text-white capitalize">Details</button>
+              <button class="btn bg-primary-color text-white capitalize" >Details</button>
             </div>
           </div>
         </div>
@@ -304,7 +326,7 @@
         <!-- meet our team section -->
         <section class="my-24 lg:mx-32 ">
           <div class="hero min-h-screen rounded-xl" style="background-image: url(images/team.png);">
-            <div class="hero-overlay rounded-xl bg-opacity-60"></div>
+            <div class="hero-overlay rounded-xl bg-opacity-60 flex flex-col lg:flex-row"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md">
                 <h1 class="mb-5 text-5xl font-extrabold">Meet Our Team</h1>
