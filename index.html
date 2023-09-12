@@ -36,9 +36,9 @@
     }
   </script>
 </head>
-<body>
+<body >
     <!-- the header -->
-    <header class="  my-10  lg:mx-32">
+    <header class="  mt-10  lg:mx-32">
         <!-- navbar -->
         <nav >
             <div class="navbar md:bg-primary-color p-9 rounded-full flex flex-col md:flex-row  gap-4">
@@ -75,15 +75,86 @@
               </div>
         </nav>
         <!-- banner -->
-        <div>
-
-        </div>
+       
+          
+          <div class="carousel w-full mt-14">
+            <!-- slider1 -->
+            <div id="slide1" class="carousel-item relative w-full  ">
+              <div class="hero min-h-screen rounded-lg" style="background-image: url(images/banner1.png);">
+                <div class="hero-overlay bg-opacity-40 rounded-lg"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="">
+                    <h1 class="mb-5 text-4xl lg:text-7xl font-extrabold capitalize">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5 max-w-md mx-auto">We supply highly quality organic products</p>
+                    <button class="btn bg-primary-color capitalize text-white border-none  px-8">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- slider2 -->
+            <div id="slide2" class="carousel-item relative w-full ">
+              <div class="hero min-h-screen rounded-lg" style="background-image: url(images/banner2.png);">
+                <div class="hero-overlay bg-opacity-40"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="">
+                    <h1 class="mb-5 text-4xl lg:text-7xl font-extrabold capitalize">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5 max-w-md mx-auto">We supply highly quality organic products</p>
+                    <button class="btn bg-primary-color capitalize text-white border-none  px-8">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- slider3 -->
+            <div id="slide3" class="carousel-item relative w-full ">
+              <div class="hero min-h-screen rounded-lg" style="background-image: url(images/banner3.png);">
+                <div class="hero-overlay bg-opacity-40"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="">
+                    <h1 class="mb-5 text-4xl lg:text-7xl font-extrabold capitalize">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5 max-w-md mx-auto">We supply highly quality organic products</p>
+                    <button class="btn bg-primary-color capitalize text-white border-none  px-8">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <!-- slider4 -->
+            <div id="slide4" class="carousel-item relative w-full ">
+              <div class="hero min-h-screen rounded-lg" style="background-image: url(images/banner4.png);">
+                <div class="hero-overlay bg-opacity-40"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="">
+                    <h1 class="mb-5 text-4xl lg:text-7xl font-extrabold capitalize">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5 max-w-md mx-auto">We supply highly quality organic products</p>
+                    <button class="btn bg-primary-color capitalize text-white border-none  px-8">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>              
+            
+          </div>
+        
     </header>
 
     <!-- main -->
-    <main class="container mx-auto "> 
+    <main class="container mx-auto  relative"> 
         <!-- fruits section -->
-        <section class="my-24 lg:mx-32 bg-slate-50 shadow-lg rounded-lg hidden lg:flex">
+        <section class="mb-10 lg:mx-36 bg-slate-50 shadow-lg rounded-lg hidden lg:flex relative -top-20">
             <div class="flex  justify-center gap-24 items-center p-4 lg:p-12">
                 <div class="space-y-4 text-center ">
                     <img src="images/fruit1.png " class="w-full" alt="">
@@ -111,31 +182,31 @@
         <section class="my-24 lg:mx-32 ">
       <div class="flex flex-col lg:flex-row justify-between p-8">
         <div>
-          <h3 class="text-5xl text-black-text font-extrabold mb-4">Deal of the day</h3>
+          <h3 class="text-3xl lg:text-5xl text-black-text font-extrabold mb-4">Deal of the day</h3>
           <p class="text-light-gray-text lg:w-[600px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
          </div>
          <!-- countdown -->
          <div class="grid grid-flow-col gap-5 text-center auto-cols-max  ">
           <div class="flex flex-col">
-            <span class="countdown text-5xl text-black-text font-extrabold ">
+            <span class="countdown text-3xl lg:text-5xl text-black-text font-extrabold ">
               <span class="" style="--value:29;"></span>:
             </span>
             days
           </div> 
           <div class="flex flex-col">
-            <span class="countdown text-5xl text-black-text font-extrabold">
+            <span class="countdown text-3xl lg:text-5xl text-black-text font-extrabold">
               <span style="--value:15;"></span> :
             </span>
             hours
           </div> 
           <div class="flex flex-col">
-            <span class="countdown text-5xl text-black-text font-extrabold">
+            <span class="countdown text-3xl lg:text-5xl text-black-text font-extrabold">
               <span style="--value:25;"></span> :
             </span>
             min
           </div> 
           <div class="flex flex-col">
-            <span class="countdown text-5xl text-black-text font-extrabold">
+            <span class="countdown text-3xl lg:text-5xl text-black-text font-extrabold">
               <span style="--value:08;"></span> 
             </span>
             sec
@@ -232,8 +303,8 @@
         </section>
         <!-- meet our team section -->
         <section class="my-24 lg:mx-32 ">
-          <div class="hero min-h-screen" style="background-image: url(images/team.png);">
-            <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero min-h-screen rounded-xl" style="background-image: url(images/team.png);">
+            <div class="hero-overlay rounded-xl bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md">
                 <h1 class="mb-5 text-5xl font-extrabold">Meet Our Team</h1>
@@ -321,7 +392,7 @@
         <!-- Why choose us section -->
         <section class="my-24 lg:mx-32 px-4">
           <div class="text-center">
-            <h3 class="text-5xl text-black-text font-extrabold mb-4 ">Why Choose Us</h3>
+            <h3 class="text-3xl lg:text-5xl text-black-text font-extrabold mb-4 ">Why Choose Us</h3>
           <p class="text-light-gray-text lg:w-[600px] mx-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
           <!-- why choose us container -->
